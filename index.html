@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FoodTrail – Privacy Policy</title>
+  <title>Khau Gully – Privacy Policy</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -30,11 +30,11 @@
 <body>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">FoodTrail &nbsp;·&nbsp; Last updated: May 26, 2026</p>
+  <p class="meta">Khau Gully &nbsp;·&nbsp; Last updated: May 31, 2026</p>
 
   <p>
-    FoodTrail ("we", "our", or "us") is a dish-rating app that lets you photograph,
-    score, and discover the best street food around you. This policy explains what
+    Khau Gully ("we", "our", or "us") is a dish-rating app that lets you photograph,
+    score, and discover the best dishes around you. This policy explains what
     information we collect, how we use it, and your rights over it.
   </p>
 
@@ -44,8 +44,16 @@
 
   <p><strong>Account information</strong></p>
   <ul>
-    <li>Email address — used to create and identify your account.</li>
-    <li>Username / display name — shown on your public profile and ratings.</li>
+    <li>Display name — required for every account, including anonymous ones, and
+        shown on your public profile and ratings.</li>
+    <li>Anonymous accounts — when you first launch the app you can start rating
+        immediately with just a display name. We create an anonymous account for
+        you behind the scenes (no email, no password). You can upgrade to a
+        permanent account later by adding an email and a unique handle.</li>
+    <li>Email address — collected only if you choose to upgrade your anonymous
+        account, sign up with email directly, or reset a password.</li>
+    <li>Handle — a unique public username you choose when you upgrade your
+        account.</li>
   </ul>
 
   <p><strong>Content you create</strong></p>
@@ -53,13 +61,15 @@
     <li>Dish photos — uploaded when you submit a rating.</li>
     <li>Ratings and scores — your 0–10 score and "would go back" answer.</li>
     <li>Notes — optional text you add to a rating.</li>
+    <li>Trails — ranked lists of dishes you create or follow.</li>
+    <li>Reports and blocks — actions you take to moderate other users' content.</li>
   </ul>
 
   <p><strong>Location</strong></p>
   <ul>
-    <li>Approximate device location — used only to suggest nearby restaurants
-        while you are actively using the app. We do not store or log your
-        location history.</li>
+    <li>Approximate (coarse) device location — used only to suggest nearby
+        restaurants while you are actively using the app. We do not store or
+        log your location history.</li>
   </ul>
 
   <p><strong>Usage data</strong></p>
@@ -72,11 +82,17 @@
 
   <h2>2. How We Use Your Information</h2>
   <ul>
-    <li>To operate your account and display your ratings.</li>
+    <li>To operate your account (anonymous or full) and display your ratings,
+        trails, and profile to other users.</li>
     <li>To identify the dish in a photo you take (processed by Google Gemini AI
         — see Section 4). Your photo is sent to Google's servers for analysis
         and is not stored by Google beyond the duration of the request.</li>
     <li>To suggest restaurants near your current location.</li>
+    <li>To calculate dish scores using our Bayesian scoring model.</li>
+    <li>To moderate user-submitted text (display name, handle, trail names,
+        notes) and keep the app safe.</li>
+    <li>To protect against automated abuse (captcha challenges on signup and
+        password reset).</li>
     <li>To improve the app's quality and fix bugs.</li>
   </ul>
   <p>We do <strong>not</strong> sell your data to third parties. We do not use
@@ -87,14 +103,13 @@
   <h2>3. How We Store Your Information</h2>
   <p>
     Your account data, ratings, and photos are stored securely on
-    <strong>Supabase</strong> infrastructure hosted in the United States.
-    Supabase is SOC 2 Type II certified. Photos are stored in encrypted
-    object storage. Passwords are never stored — authentication is handled
-    via secure tokens.
+    <strong>Supabase</strong> infrastructure. Supabase is SOC 2 Type II certified.
+    Photos are stored in encrypted object storage. Passwords are never stored —
+    authentication is handled via secure tokens.
   </p>
   <p>
-    We retain your data for as long as your account is active. You may request
-    deletion at any time (see Section 6).
+    We retain your data for as long as your account is active. You may delete
+    your account at any time (see Section 6).
   </p>
 
   <hr class="divider" />
@@ -110,6 +125,17 @@
   for this purpose and is not used to train models. Governed by Google's
   <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.</p>
 
+  <p><strong>OpenAI</strong> (openai.com) — text you submit (display name, handle,
+  trail names, notes) is briefly sent to OpenAI's moderation API to check for
+  inappropriate content. Photos are <em>not</em> sent to OpenAI. Governed by
+  OpenAI's
+  <a href="https://openai.com/policies/privacy-policy" target="_blank">Privacy Policy</a>.</p>
+
+  <p><strong>Cloudflare Turnstile</strong> — used as a captcha on signup and
+  password reset to block automated abuse. Cloudflare receives a token and basic
+  request metadata; no app data is shared. Governed by Cloudflare's
+  <a href="https://www.cloudflare.com/privacypolicy/" target="_blank">Privacy Policy</a>.</p>
+
   <p><strong>Apple MapKit / Core Location</strong> — used on-device to find
   nearby restaurants. No location data leaves your device via this service.</p>
 
@@ -117,8 +143,8 @@
 
   <h2>5. Children's Privacy</h2>
   <p>
-    FoodTrail is not directed at children under the age of 13. We do not
-    knowingly collect personal information from children under 13. If you
+    Khau Gully is not directed at children under the age of 16. We do not
+    knowingly collect personal information from children under 16. If you
     believe a child has provided us with personal information, please contact
     us and we will delete it promptly.
   </p>
@@ -129,17 +155,24 @@
   <p>You have the right to:</p>
   <ul>
     <li><strong>Access</strong> the personal data we hold about you.</li>
-    <li><strong>Correct</strong> inaccurate information.</li>
+    <li><strong>Correct</strong> inaccurate information — update your display
+        name and home city in <em>Profile → Edit</em>.</li>
     <li><strong>Delete</strong> your account and all associated data — go to
-        <em>Profile → Settings → Delete Account</em> in the app, or email us at
-        <a href="mailto:publishing.apps.2026@gmail.com">publishing.apps.2026@gmail.com</a>.</li>
-    <li><strong>Export</strong> your ratings data by contacting us.</li>
+        <em>Profile → Delete Account</em> in the app. No email or support
+        request is required, and this works for anonymous accounts too.</li>
+    <li><strong>Export</strong> your ratings data by contacting us at the email
+        below.</li>
   </ul>
-  <p>
-    Deletion requests are processed within 30 days. Photos are removed from
-    storage; anonymised aggregated data (e.g. restaurant-level score averages)
-    may be retained.
-  </p>
+  <p>Deletion is immediate and permanent. It removes:</p>
+  <ul>
+    <li>your profile (display name, handle, home city);</li>
+    <li>your ratings, including scores, notes, and would-go-back answers;</li>
+    <li>your uploaded dish photos (deleted from storage);</li>
+    <li>trails you own, and your follows on other trails;</li>
+    <li>reports, blocks, and curator-application rows associated with your
+        account;</li>
+    <li>your authentication record (email, password hash, anonymous session).</li>
+  </ul>
 
   <hr class="divider" />
 
